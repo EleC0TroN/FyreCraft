@@ -1,0 +1,33 @@
+//Items
+item.phosphite.name=Phosphite Dust
+item.vulcanite_ingot.name=Vulcanite Ingot
+item.celestial_diamond.name=Celestial Diamond
+
+//Tools
+item.vulcanite_sword.name=Vulcanite Sword
+item.vulcanite_axe.name=Vulcanite Axe
+item.vulcanite_pickaxe.name=Vulcanite Pickaxe
+item.vulcanite_shovel.name=Vulcanite Shovel
+item.vulcanite_hoe.name=Vulcanite Hoe
+
+//Armour
+item.vulcanite_helmet.name=Vulcanite Helmet
+item.vulcanite_chestplate.name=Vulcanite Chestplate
+item.vulcanite_leggings.name=Vulcanite Leggings
+item.vulcanite_boots.name=Vulcanite Boots
+
+//Blocks
+tile.phosphite_ore.name=Phosphite Ore
+tile.phosphite_ore_end.name=Ender Phosphite Ore
+tile.vulcanite_ore.name=Vulcanite Ore
+tile.icestone.name=Icestone Ore
+tile.celestium_ore.name=Celestium Ore
+
+//Creative Tabs
+itemGroup.fyrecraftblockstab=FyreCraft Blocks
+itemGroup.fyrecraftmaterialstab=FyreCraft Materials
+itemGroup.fyrecrafttoolstab=FyreCraft Tools
+itemGroup.fyrecraftcombattab=FyreCraft Combat
+
+//Other
+generator.Custom=FyreCraft Biomes
