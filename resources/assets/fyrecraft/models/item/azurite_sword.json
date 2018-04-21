@@ -1,6 +1,6 @@
 {
    "parent": "item/generated",
    "textures": {
-       "layer0": "fyrecraft:items/vulcanite_shovel"
+       "layer0": "fyrecraft:items/azurite_sword"
    }
 }

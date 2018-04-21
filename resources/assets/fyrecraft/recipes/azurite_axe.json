@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": 
+	[
+		"AA",
+		"AS",
+		" S"
+	],
+	
+	"key":
+	{
+		"A":
+		{
+			"item": "fyrecraft:azurite"
+		},
+		
+		"S":
+		{
+			"item": "minecraft:stick"
+		}
+	},
+	
+	
+	"result":
+	{
+		"item": "fyrecraft:azurite_axe"
+	}
+}

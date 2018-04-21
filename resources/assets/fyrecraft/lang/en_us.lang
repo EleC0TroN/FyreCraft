@@ -1,9 +1,26 @@
 //Items
 item.phosphite.name=Phosphite Dust
+item.aquamarine.name=Aquamarine Crystals
+item.azurite.name=Azurite
+item.infernadium_ingot.name=Infernadium Ingot
+item.atlantium_ingot.name=Atlantium Ingot
 item.vulcanite_ingot.name=Vulcanite Ingot
+item.blazorite_ingot.name=Blazorite Ingot
 item.celestial_diamond.name=Celestial Diamond
 
 //Tools
+item.azurite_sword.name=Azurite Sword
+item.azurite_axe.name=Azurite Axe
+item.azurite_pickaxe.name=Azurite Pickaxe
+item.azurite_shovel.name=Azurite Shovel
+item.azurite_hoe.name=Azurite Hoe
+
+item.infernadium_sword.name=Infernadium Sword
+item.infernadium_axe.name=Infernadium Axe
+item.infernadium_pickaxe.name=Infernadium Pickaxe
+item.infernadium_shovel.name=Infernadium Shovel
+item.infernadium_hoe.name=Infernadium Hoe
+
 item.vulcanite_sword.name=Vulcanite Sword
 item.vulcanite_axe.name=Vulcanite Axe
 item.vulcanite_pickaxe.name=Vulcanite Pickaxe
@@ -11,17 +28,45 @@ item.vulcanite_shovel.name=Vulcanite Shovel
 item.vulcanite_hoe.name=Vulcanite Hoe
 
 //Armour
+item.azurite_helmet.name=Azurite Helmet
+item.azurite_chestplate.name=Azurite Chestplate
+item.azurite_leggings.name=Azurite Leggings
+item.azurite_boots.name=Azurite Boots
+
+item.infernadium_helmet.name=Infernadium Helmet
+item.infernadium_chestplate.name=Infernadium Chestplate
+item.infernadium_leggings.name=Infernadium Leggings
+item.infernadium_boots.name=Infernadium Boots
+
 item.vulcanite_helmet.name=Vulcanite Helmet
 item.vulcanite_chestplate.name=Vulcanite Chestplate
 item.vulcanite_leggings.name=Vulcanite Leggings
 item.vulcanite_boots.name=Vulcanite Boots
 
+item.magmatic_greatblade.name=Magmatic Greatblade
+
 //Blocks
 tile.phosphite_ore.name=Phosphite Ore
 tile.phosphite_ore_end.name=Ender Phosphite Ore
-tile.vulcanite_ore.name=Vulcanite Ore
 tile.icestone.name=Icestone Ore
+tile.prismarine_lapis_ore.name=Prismarine Lapis Lazuli Ore
+tile.pumice_gold_ore.name=Pumice Gold Ore
+tile.aquamarine_ore.name=Aquamarine Ore
+tile.azurite_ore.name=Azurite Ore
+tile.infernadium_ore.name=Infernadium Ore
+tile.atlantium_ore.name=Atlantium Ore
+tile.vulcanite_ore.name=Vulcanite Ore
+tile.blazorite_ore.name=Blazorite Ore
 tile.celestium_ore.name=Celestium Ore
+
+tile.aquamarine_block.name=Block of Aquamarine
+tile.vulcanite_block.name=Block of Vulcanite
+
+tile.pumice.name=Pumice
+
+tile.wither_nether_brick.name=Wither Nether Brick
+
+tile.teleporter.name=Teleporter
 
 //Creative Tabs
 itemGroup.fyrecraftblockstab=FyreCraft Blocks

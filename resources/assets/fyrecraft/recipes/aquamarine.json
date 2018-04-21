@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": 
+	[
+		"B"
+	],
+	
+	"key":
+	{
+		"B":
+		{
+			"item": "fyrecraft:aquamarine_block"
+		}
+	},
+	
+	"result":
+	{
+		"item": "fyrecraft:aquamarine",
+		"count": 9
+	}
+}
