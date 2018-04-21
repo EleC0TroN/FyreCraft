@@ -13,6 +13,7 @@ public class MushroomGrove extends Biome {
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
 		this.decorator.treesPerChunk = 6;
+		this.decorator.grassPerChunk = 6;
 		this.decorator.bigMushroomsPerChunk = 2;
 		this.decorator.flowersPerChunk = 2;
 		this.decorator.mushroomsPerChunk = 5;

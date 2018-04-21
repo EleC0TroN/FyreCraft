@@ -13,7 +13,7 @@ public class CombatTab extends CreativeTabs {
 	
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ItemInit.VULCANITE_HELMET);
+		return new ItemStack(ItemInit.VULCANITE_SWORD);
 	}
 
 }

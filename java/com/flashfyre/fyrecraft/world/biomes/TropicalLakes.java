@@ -7,7 +7,7 @@ public class TropicalLakes extends Biome {
 	
 	public TropicalLakes() {
 		
-		super(new BiomeProperties("Tropical Lakes").setBaseHeight(-0.3F).setHeightVariation(0.2F).setTemperature(0.95F).setRainfall(0.8F));
+		super(new BiomeProperties("Tropical Lakes").setBaseHeight(-0.3F).setHeightVariation(0.25F).setTemperature(0.95F).setRainfall(0.8F));
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

@@ -14,7 +14,7 @@ public class BlocksTab extends CreativeTabs {
 	
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(Item.getItemFromBlock(BlockInit.PHOSPHITE_ORE));
+		return new ItemStack(Item.getItemFromBlock(BlockInit.VULCANITE_BLOCK));
 	}
 
 }

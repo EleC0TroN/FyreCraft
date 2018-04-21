@@ -13,7 +13,7 @@ public class ToolsTab extends CreativeTabs {
 	
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ItemInit.CELESTIAL_DIAMOND);
+		return new ItemStack(ItemInit.INFERNADIUM_PICKAXE);
 	}
 
 }

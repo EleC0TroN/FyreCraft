@@ -2,6 +2,7 @@ package com.flashfyre.fyrecraft.world.gen;
 
 import java.util.Random;
 
+import com.flashfyre.fyrecraft.init.BiomeInit;
 import com.flashfyre.fyrecraft.init.BlockInit;
 
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -37,10 +38,10 @@ public class OregenVulcanite implements IWorldGenerator {
 		
 		Biome biome = world.getBiome(new BlockPos(blockX, 64, blockZ));
 		
-		if(minHeight > maxHeight || minHeight < 0 || maxHeight > 256) throw new IllegalArgumentException("Ore generated out of bounds.");
+		if(minHeight > maxHeight || minHeight < 0 || maxHeight > 255) throw new IllegalArgumentException("Ore generated out of bounds.");
 		int heightDiff = maxHeight - minHeight + 1;
 		
-		if(biome == Biomes.EXTREME_HILLS || biome == Biomes.EXTREME_HILLS_WITH_TREES || biome == Biomes.MUTATED_EXTREME_HILLS || biome == Biomes.MUTATED_EXTREME_HILLS_WITH_TREES) {
+		if(biome == Biomes.EXTREME_HILLS || biome == Biomes.EXTREME_HILLS_WITH_TREES || biome == Biomes.MUTATED_EXTREME_HILLS || biome == Biomes.MUTATED_EXTREME_HILLS_WITH_TREES || biome == BiomeInit.MEGA_MOUNTAINS ) {
 			for(int i = 0; i < chance; i++) {
 				int x = chunkX * 16 + rand.nextInt(16);
 				int y = minHeight + rand.nextInt(heightDiff);

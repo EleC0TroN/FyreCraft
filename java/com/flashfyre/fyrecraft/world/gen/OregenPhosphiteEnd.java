@@ -30,7 +30,7 @@ public class OregenPhosphiteEnd implements IWorldGenerator {
 	
 	private void runGenerator(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int chance, int minHeight, int maxHeight) {
 		
-		if(minHeight > maxHeight || minHeight < 0 || maxHeight > 256) throw new IllegalArgumentException("Ore generated out of bounds.");
+		if(minHeight > maxHeight || minHeight < 0 || maxHeight > 255) throw new IllegalArgumentException("Ore generated out of bounds.");
 		
 		int heightDiff = maxHeight - minHeight + 1;
 		for(int i = 0; i < chance; i++) {

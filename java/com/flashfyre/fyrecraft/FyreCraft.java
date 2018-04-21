@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class FyreCraft {
@@ -21,9 +22,9 @@ public class FyreCraft {
 	public static FyreCraft instance;
 	
 	public static final CreativeTabs fyrecraftblockstab = new BlocksTab("fyrecraftblockstab");
-	public static final CreativeTabs fyrecrafttoolstab = new BlocksTab("fyrecrafttoolstab");
-	public static final CreativeTabs fyrecraftmaterialstab = new BlocksTab("fyrecraftmaterialstab");
-	public static final CreativeTabs fyrecraftcombattab = new BlocksTab("fyrecraftcombattab");
+	public static final CreativeTabs fyrecrafttoolstab = new ToolsTab("fyrecrafttoolstab");
+	public static final CreativeTabs fyrecraftmaterialstab = new MaterialsTab("fyrecraftmaterialstab");
+	public static final CreativeTabs fyrecraftcombattab = new CombatTab("fyrecraftcombattab");
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
 	public static CommonProxy proxy;
@@ -43,6 +44,11 @@ public class FyreCraft {
 		
 		ModRecipes.init();
 		RegistryHandler.postInitRegistries();
+	}
+	
+	@EventHandler
+	public static void serverInit(FMLServerStartingEvent event) {
+		RegistryHandler.serverRegistries(event);
 	}
 	
 }

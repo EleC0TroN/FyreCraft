@@ -5,7 +5,6 @@ import java.util.Random;
 import com.flashfyre.fyrecraft.init.BlockInit;
 
 import net.minecraft.block.state.pattern.BlockMatcher;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -14,18 +13,18 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class OregenCelestium implements IWorldGenerator {
+public class OregenPumiceGold implements IWorldGenerator {
 	
-	private WorldGenerator celestium_oregen;
+private WorldGenerator pumicegold_oregen;
 	
-	public OregenCelestium() {
+	public OregenPumiceGold() {
 		
-		celestium_oregen = new WorldGenMinable(BlockInit.CELESTIUM_ORE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));				
+		pumicegold_oregen = new WorldGenMinable(BlockInit.PUMICE_GOLD_ORE.getDefaultState(), 6, BlockMatcher.forBlock(BlockInit.PUMICE));				
 	}
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		runGenerator(celestium_oregen, world, random, chunkX, chunkZ, 7, 1, 62);
+		runGenerator(pumicegold_oregen, world, random, chunkX, chunkZ, 6, 4, 126);
 	}
 	
 	private void runGenerator(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int chance, int minHeight, int maxHeight) {

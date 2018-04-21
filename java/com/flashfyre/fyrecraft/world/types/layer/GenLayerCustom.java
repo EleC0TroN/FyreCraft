@@ -37,8 +37,9 @@ public class GenLayerCustom extends GenLayer
         biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.ROCKY_WASTELAND, 30));
         biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.MUSHROOM_GROVE, 30));
         biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.TROPICAL_LAKES, 30));
-        biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.TROPICAL_DESERT, 30));
         biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.MEGA_MOUNTAINS, 30));
+        biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.RED_DESERT, 30));
+        biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.RED_DESERT_HILLS, 30));
 
         if (p_i45560_4_ == WorldType.DEFAULT_1_1)
         {
@@ -49,8 +50,9 @@ public class GenLayerCustom extends GenLayer
             biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.ROCKY_WASTELAND, 10));
             biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.MUSHROOM_GROVE, 10));
             biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.TROPICAL_LAKES, 10));
-            biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.TROPICAL_DESERT, 10));
+            biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.RED_DESERT, 10));
             biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.MEGA_MOUNTAINS, 10));
+            biomes[desertIdx].add(new net.minecraftforge.common.BiomeManager.BiomeEntry(BiomeInit.RED_DESERT_HILLS, 10));
             this.settings = null;
         }
         else

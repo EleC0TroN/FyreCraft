@@ -14,18 +14,18 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class OregenCelestium implements IWorldGenerator {
+public class OregenBlazorite implements IWorldGenerator {
 	
-	private WorldGenerator celestium_oregen;
+private WorldGenerator blazorite_oregen;
 	
-	public OregenCelestium() {
+	public OregenBlazorite() {
 		
-		celestium_oregen = new WorldGenMinable(BlockInit.CELESTIUM_ORE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));				
+		blazorite_oregen = new WorldGenMinable(BlockInit.BLAZORITE_ORE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.NETHERRACK));				
 	}
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		runGenerator(celestium_oregen, world, random, chunkX, chunkZ, 7, 1, 62);
+		runGenerator(blazorite_oregen, world, random, chunkX, chunkZ, 4, 106, 126);
 	}
 	
 	private void runGenerator(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int chance, int minHeight, int maxHeight) {

@@ -12,18 +12,35 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class BiomeInit {
 	
+	//Overworld biomes
 	public static final Biome ROCKY_WASTELAND = new RockyWasteland();	
 	public static final Biome MUSHROOM_GROVE = new MushroomGrove();
 	public static final Biome TROPICAL_LAKES = new TropicalLakes();
-	public static final Biome TROPICAL_DESERT = new TropicalDesert();
 	public static final Biome MEGA_MOUNTAINS = new MegaMountains();
+	public static final Biome RED_DESERT = new RedDesert();
+	public static final Biome RED_DESERT_HILLS = new RedDesert();
+	public static final Biome VOLCANIC_WASTELAND = new VolcanicWasteland();
+	
+	//Custom dimension biomes
+	public static final Biome MINING_CAVERNS = new Caverns();
+	public static final Biome WATERFALLS = new Waterfalls();
 	
 	public static void registerBiomes() {
+		
+		//initBiome(weight, name, name, biome type, biomedict type);
+		
+		//Overworld biomes
 		initBiome(9, ROCKY_WASTELAND, "Rocky Wasteland", BiomeType.COOL, Type.DRY, Type.WASTELAND, Type.SPARSE);
-		initBiome(14, MUSHROOM_GROVE, "Mushroom Grove", BiomeType.WARM, Type.DENSE, Type.MUSHROOM, Type.FOREST);
+		initBiome(12, MUSHROOM_GROVE, "Mushroom Grove", BiomeType.WARM, Type.DENSE, Type.MUSHROOM, Type.FOREST);
 		initBiome(12, TROPICAL_LAKES, "Tropical Lakes", BiomeType.WARM, Type.HOT, Type.JUNGLE, Type.LUSH);
-		initBiome(10, TROPICAL_DESERT, "Tropical Desert", BiomeType.WARM, Type.HOT, Type.LUSH);
 		initBiome(9, MEGA_MOUNTAINS, "Mega Mountains", BiomeType.COOL, Type.HILLS, Type.MOUNTAIN, Type.COLD);
+		initBiome(13, RED_DESERT, "Red Desert", BiomeType.DESERT, Type.DRY, Type.HOT, Type.SANDY);
+		initBiome(11, RED_DESERT_HILLS, "Red Desert Hills", BiomeType.DESERT, Type.DRY, Type.HOT, Type.SANDY, Type.HILLS);
+		initBiome(10, VOLCANIC_WASTELAND, "Volcanic Wasteland", BiomeType.DESERT, Type.DEAD, Type.DRY, Type.HOT, Type.WASTELAND);
+		
+		//Custom dimension biomes
+		initBiome(0, MINING_CAVERNS, "Miner's Caverns", BiomeType.COOL, Type.SPOOKY);
+		initBiome(0, WATERFALLS, "Waterfalls", BiomeType.COOL, Type.WATER, Type.WET);
 	}
 	
 	private static Biome initBiome(int rarity, Biome biome, String name, BiomeType biomeType, Type... types) {
