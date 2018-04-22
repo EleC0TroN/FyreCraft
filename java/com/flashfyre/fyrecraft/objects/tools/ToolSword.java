@@ -4,7 +4,7 @@ import com.flashfyre.fyrecraft.FyreCraft;
 import com.flashfyre.fyrecraft.init.ItemInit;
 import com.flashfyre.fyrecraft.util.IHasModel;
 
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
@@ -26,7 +26,7 @@ public class ToolSword extends ItemSword implements IHasModel {
 		FyreCraft.proxy.registerItemRenderer(this, 0, "inventory");		
 	}
 
-	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving) {
+	public boolean hitEntity(ItemStack par1ItemStack, EntityLivingBase par2EntityLiving, EntityLivingBase par3EntityLiving) {
 
 		return false;
 	}

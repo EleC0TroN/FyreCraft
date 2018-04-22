@@ -55,6 +55,8 @@ public class RegistryHandler {
 		GameRegistry.registerWorldGenerator(new OregenPhosphiteEnd(), 0);
 		GameRegistry.registerWorldGenerator(new OregenIcestone(), 0);
 		GameRegistry.registerWorldGenerator(new OregenPrisLapis(), 0);
+		GameRegistry.registerWorldGenerator(new OregenEnderPearl(), 0);
+		
 		GameRegistry.registerWorldGenerator(new OregenAzurite(), 0);
 		GameRegistry.registerWorldGenerator(new OregenInfernadium(), 0);
 		GameRegistry.registerWorldGenerator(new OregenAtlantium(), 0);
@@ -62,6 +64,7 @@ public class RegistryHandler {
 		GameRegistry.registerWorldGenerator(new OregenBlazorite(), 0);
 		GameRegistry.registerWorldGenerator(new OregenCelestium(), 0);
 		GameRegistry.registerWorldGenerator(new OregenPumiceGold(), 0);
+		
 		GameRegistry.registerWorldGenerator(new StonegenPumice(), 0);
 		
 		BiomeInit.registerBiomes();
@@ -76,4 +79,6 @@ public class RegistryHandler {
 	public static void serverRegistries(FMLServerStartingEvent event) {
 		event.registerServerCommand(new CmdDimTp());
 	}
+	
+	
 }

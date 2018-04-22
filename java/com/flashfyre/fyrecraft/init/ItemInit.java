@@ -24,18 +24,18 @@ public class ItemInit {
 
 	//Material (for tools & armour)
 	public static final ToolMaterial TOOL_AZURITE = EnumHelper.addToolMaterial("tool_azurite", 2, 750, 7.0F, 2.5F, 22);
-	public static final ArmorMaterial ARMOUR_AZURITE = EnumHelper.addArmorMaterial("armor_azurite", Reference.MOD_ID + ":azurite", 42, new int[]{2, 5, 6, 2}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5F);
+	public static final ArmorMaterial ARMOUR_AZURITE = EnumHelper.addArmorMaterial("armor_azurite", Reference.MODID + ":azurite", 42, new int[]{2, 5, 6, 2}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5F);
 	
 	public static final ToolMaterial TOOL_INFERNADIUM = EnumHelper.addToolMaterial("tool_infernadium", 4, 2500, 10.0F, 4.0F, 16);
-	public static final ArmorMaterial ARMOUR_INFERNADIUM = EnumHelper.addArmorMaterial("armor_infernadium", Reference.MOD_ID + ":infernadium", 42, new int[]{4, 7, 9, 4}, 16, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.5F);
+	public static final ArmorMaterial ARMOUR_INFERNADIUM = EnumHelper.addArmorMaterial("armor_infernadium", Reference.MODID + ":infernadium", 42, new int[]{4, 7, 9, 4}, 16, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.5F);
 	
 	public static final ToolMaterial TOOL_ATLANTIUM = EnumHelper.addToolMaterial("tool_atlantium", 4, 2900, 12.0F, 4.5F, 18);
-	public static final ArmorMaterial ARMOUR_ATLANTIUM = EnumHelper.addArmorMaterial("armor_atlantium", Reference.MOD_ID + ":atlantium", 48, new int[] {4, 7, 9, 4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
+	public static final ArmorMaterial ARMOUR_ATLANTIUM = EnumHelper.addArmorMaterial("armor_atlantium", Reference.MODID + ":atlantium", 48, new int[] {4, 7, 9, 4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
 	
 	public static final ToolMaterial TOOL_VULCANITE = EnumHelper.addToolMaterial("tool_vulcanite", 5, 3700, 14.0F, 5.0F, 10);
-	public static final ArmorMaterial ARMOUR_VULCANITE = EnumHelper.addArmorMaterial("armor_vulcanite", Reference.MOD_ID + ":vulcanite", 55, new int[] {5, 8, 10, 5}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.5F);
+	public static final ArmorMaterial ARMOUR_VULCANITE = EnumHelper.addArmorMaterial("armor_vulcanite", Reference.MODID + ":vulcanite", 55, new int[] {5, 8, 10, 5}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.5F);
 	
-	public static final ToolMaterial TOOL_MAGMATIC_GREATBLADE = EnumHelper.addToolMaterial("magmatic_greatblade", 6, 5000, 16.0F, 6.0F, 8);
+	public static final ToolMaterial TOOL_MAGMATIC_GREATBLADE = EnumHelper.addToolMaterial("magmatic_greatblade", 5, 4000, 14.0F, 5.0F, 8);
 	
 	//Items
 	public static final Item PHOSPHITE = new ItemBase("phosphite");

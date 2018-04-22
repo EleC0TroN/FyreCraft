@@ -2,7 +2,7 @@ package com.flashfyre.fyrecraft.objects.items;
 
 import com.flashfyre.fyrecraft.objects.tools.ToolSword;
 
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 
 public class MagmaticGreatblade extends ToolSword {
@@ -12,10 +12,10 @@ public class MagmaticGreatblade extends ToolSword {
 	}
 	
 	@Override
-	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving)
+	public boolean hitEntity(ItemStack par1ItemStack, EntityLivingBase target, EntityLivingBase attacker)
 	{
-		 par1ItemStack.damageItem(1, par3EntityLiving);
-		 par2EntityLiving.setFire(10);
+		 par1ItemStack.damageItem(1, attacker);
+		 target.setFire(5);
 		 return true;
 	}
 	

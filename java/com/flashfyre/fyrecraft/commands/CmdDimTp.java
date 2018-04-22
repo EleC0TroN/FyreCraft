@@ -17,7 +17,7 @@ import net.minecraft.util.text.TextFormatting;
 
 public class CmdDimTp extends CommandBase {
 
-	private final List<String> aliases = Lists.newArrayList(Reference.MOD_ID, "tp", "tpdim", "dimtp", "tpdimension", "dimensiontp", "teleportdimension", "dimensionteleport", "teleport");
+	private final List<String> aliases = Lists.newArrayList(Reference.MODID, "tp", "tpdim", "dimtp", "tpdimension", "dimensiontp", "teleportdimension", "dimensionteleport", "teleport");
 	
 	@Override
 	public String getName() {

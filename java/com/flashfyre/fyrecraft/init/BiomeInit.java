@@ -18,8 +18,9 @@ public class BiomeInit {
 	public static final Biome TROPICAL_LAKES = new TropicalLakes();
 	public static final Biome MEGA_MOUNTAINS = new MegaMountains();
 	public static final Biome RED_DESERT = new RedDesert();
-	public static final Biome RED_DESERT_HILLS = new RedDesert();
+	public static final Biome RED_DESERT_HILLS = new RedDesertHills();
 	public static final Biome VOLCANIC_WASTELAND = new VolcanicWasteland();
+	public static final Biome CRIMSON_GROVE = new CrimsonGrove();
 	
 	//Custom dimension biomes
 	public static final Biome MINING_CAVERNS = new Caverns();
@@ -37,6 +38,7 @@ public class BiomeInit {
 		initBiome(13, RED_DESERT, "Red Desert", BiomeType.DESERT, Type.DRY, Type.HOT, Type.SANDY);
 		initBiome(11, RED_DESERT_HILLS, "Red Desert Hills", BiomeType.DESERT, Type.DRY, Type.HOT, Type.SANDY, Type.HILLS);
 		initBiome(10, VOLCANIC_WASTELAND, "Volcanic Wasteland", BiomeType.DESERT, Type.DEAD, Type.DRY, Type.HOT, Type.WASTELAND);
+		initBiome(10, CRIMSON_GROVE, "Crimson Grove", BiomeType.WARM, Type.FOREST, Type.DENSE);
 		
 		//Custom dimension biomes
 		initBiome(0, MINING_CAVERNS, "Miner's Caverns", BiomeType.COOL, Type.SPOOKY);

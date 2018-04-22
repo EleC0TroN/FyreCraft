@@ -33,5 +33,9 @@ public class DimensionCaverns extends WorldProvider {
 	 public boolean isSurfaceWorld() {
 		 return false;
 	 }
+	 
+	 public boolean getHasNoSky() {
+		 return true;
+	 }
 
 }
